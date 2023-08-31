@@ -1,0 +1,329 @@
+* {
+    font-family: Arial, sans-serif
+}
+
+html body {
+    height: 100vh;
+    margin: 0;
+    /*noinspection CssReplaceWithShorthandSafely*/
+    background: #111927 radial-gradient(circle at top, hsl(312.73, 41%, 16%) 0, transparent 59%);
+    /*noinspection CssReplaceWithShorthandSafely*/
+    background-repeat: no-repeat, repeat, repeat;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: space-evenly;
+}
+
+.flexbox-item {
+    margin: 30px 10px 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    height: 420px;
+    transition: 600ms;
+    min-width: 420px;
+}
+
+
+
+.flexbox-item-1:hover {
+    -webkit-box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.4);
+    -moz-box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.4);
+    box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.3);
+    scale: 1.1;
+
+    transition: 600ms;
+    position: relative;
+    transform: translateX(30px);
+}
+
+.flexbox-item-1 {
+justify-content: space-evenly;
+}
+
+.flexbox-item-2:hover {
+    -webkit-box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.4);
+    -moz-box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.4);
+    box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.3);
+    transform: scale(1.2);
+}
+
+
+
+.flexbox-item-3:hover {
+    -webkit-box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.4);
+    -moz-box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.4);
+    box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.3);
+    scale: 1.1;
+    transition: 600ms;
+    position: relative;
+    transform: translateX(-30px);
+
+}
+
+.logo {
+    justify-content: center;
+    display: flex;
+    max-width: 420px;
+    position: relative;
+    opacity: 0.75;
+    object-fit: cover;
+
+}
+
+
+.logotext {
+    font-family: "Comic Sans MS", sans-serif;
+    color: rgba(240, 128, 128, 0.61);
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px; /* Ustawiamy odstęp od dołu kontenera */
+    left: 0;
+    right: 0; /* Rozciągamy tekst na całą szerokość kontenera */
+}
+
+
+.waves {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.55;
+}
+
+.over-social-text-container {
+    color: beige;
+    opacity: 0.7;
+}
+
+.over-social-text {
+    font-family: "Comic Sans MS", sans-serif;
+    left: 0;
+    right: 0;
+    text-align: center;
+    position: absolute;
+    text-wrap: none;
+}
+
+.socials-container {
+    flex-shrink: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 135px 100px 60px;
+    justify-content: center;
+}
+
+.social-subcontainer {
+    flex-shrink: 1;
+    margin: 7px;
+
+}
+
+.social-text {
+    font-family: "Comic Sans MS", sans-serif;
+    color: rgba(240, 128, 128, 0.61);
+    vertical-align: middle;
+    transition: 500ms;
+    text-decoration: none;
+    font-size: 18px;
+    text-wrap: none;
+    line-height: 1em;
+    white-space: nowrap;
+    color: beige;
+    opacity: 0.8;
+}
+
+.github-text:hover, .linkedin-text:hover, .place-text:hover {
+    color: salmon;
+    text-decoration: underline;
+}
+
+.social-logo {
+    width: 30px;
+    vertical-align: middle;
+    opacity: 0.85;
+}
+
+.linkedin {
+    height: 20px;
+    filter: invert(100%);
+}
+
+.github-text {
+    margin-top: 3px;
+}
+.gmail {
+    filter: invert(100%);
+}
+.phone-logo {
+    filter: invert(100%);
+}
+.phone-text {
+    /*noinspection CssInvalidPropertyValue*/
+    font-size: 17, 5px;
+}
+.place-logo {
+    filter: invert(100%);
+}
+li {
+    list-style: none;
+    font-family: "Comic Sans MS", sans-serif;
+    color: beige;
+    opacity: 0.8;
+
+}
+
+img {
+    display: inline;
+    vertical-align: middle;
+}
+
+
+
+.skill-text-header {
+
+    justify-content: flex-start;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.skill-text {
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 30px;
+    color: beige;
+    opacity: 0.7;
+}
+
+.skill-lists {
+    justify-content: flex-start;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-skill-list {
+    width: 200px;
+}
+
+.left-skill-list {
+    width: 200px;
+
+}
+
+.skill-logo {
+    width: 20px;
+    filter: invert(100%);
+}
+.button-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    align-items: center;
+    margin-top:10px;
+}
+.cv-button {
+    color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    opacity: 0.7;
+    transition: 600ms;
+    border: thin solid rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+}
+.cv-button:hover {
+    text-decoration: underline;
+    scale: 1.055;
+    -webkit-box-shadow: 0 0 7px 6px rgba(173, 216, 230, 0.3);
+    -moz-box-shadow: 0 0 7px 6px rgba(173, 216, 230, 0.3);
+    box-shadow: 0 0 8px 3px rgba(240, 128, 128, 0.3);
+    cursor: pointer;
+}
+.flexbox-container2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: space-evenly;
+}
+.flexbox2-item {
+    margin: 30px 10px 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    height: 250px;
+    transition: 600ms;
+    min-width: 420px;
+
+}
+.flexbox2-item:hover {
+    scale: 1.1;
+    -webkit-box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.4);
+    -moz-box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.4);
+    box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.3);
+}
+.flexbox2-item-2:hover {
+    scale: 1.2;
+}
+.experience-link {
+    font-size:13px ;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.experience-img {
+    margin-top: 40px;
+    width: 150px;
+    filter: invert(100%);
+    opacity: 0.7;
+}
+
+.experience-text{
+    font-family: "Comic Sans MS", sans-serif;
+}
+.education {
+    font-size:13px ;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+.education-img{
+    margin-top: 35px;
+    width: 150px;
+
+}
+.education-text {
+    margin-top: 22px;
+    font-family: "Comic Sans MS", sans-serif;
+}
+.projects-link{
+    font-size:13px ;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+.projects-img{
+    margin-top: 40px;
+    width: 150px;
+    filter: invert(100%);
+    opacity: 0.7;
+}
+.projects-text {
+    font-family: "Comic Sans MS", sans-serif;
+}
