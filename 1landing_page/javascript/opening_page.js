@@ -103,3 +103,4 @@ document.addEventListener("DOMContentLoaded", function () {
         flexbox2_item2.style.opacity = "1";
     });
 });
+alert('page under construction');

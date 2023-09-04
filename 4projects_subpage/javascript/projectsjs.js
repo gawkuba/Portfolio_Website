@@ -24,3 +24,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+alert('page under construction');
