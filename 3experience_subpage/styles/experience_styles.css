@@ -44,6 +44,7 @@ html body {
     text-align: center;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 50px;
 }
 .flexbox-item:hover {
     -webkit-box-shadow: 8px 8px 24px 0 rgba(240, 128, 128, 0.4);
